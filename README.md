@@ -1,8 +1,21 @@
-# ember-cli-deploy-manifest-json
+# ember-cli-deploy-index-json
 
-> An Ember CLI Deploy plugin to ....... (you could add a tag line for your plugin here)
+> An Ember CLI Deploy plugin to use a JSON index rather than an HTML one as provided by [`ember-cli-deploy-s3-index`](https://github.com/ember-cli-deploy/ember-cli-deploy-s3-index).
 
-[TODO] You could write a short summary of your plugin here
+This JSON index file is meant to be consumed by some application embedding yours.
+
+```
+$ ember deploy production
+$ cat tmp/deploy-dist/index.json
+{
+  "assets/dummy.css": "assets/dummy-d41d8cd98f00b204e9800998ecf8427e.css",
+  "assets/dummy.js": "assets/dummy-f1caa4785f44f7dc0ca9118458c120f8.js",
+  "assets/vendor.js": "assets/vendor-b3a3b580d0c1bf83382792291e35020b.js",
+  "assets/vendor.css": "assets/vendor-d41d8cd98f00b204e9800998ecf8427e.css",
+  "crossdomain.xml": "crossdomain.xml",
+  "robots.txt": "robots.txt"
+}
+```
 
 ## What is an Ember CLI Deploy plugin?
 
@@ -10,58 +23,92 @@ A plugin is an addon that can be executed as a part of the Ember CLI Deploy pipe
 
 For more information on what plugins are and how they work, please refer to the [Plugin Documentation][1].
 
-## Quick Start
+## Setup
+
+- Requirements
+
+You'll first have to [setup `ember-cli-deploy-s3-index`](https://github.com/ember-cli-deploy/ember-cli-deploy-s3-index#quick-start).
 
 - Install this plugin
 
 ```bash
-$ ember install ember-cli-deploy-manifest-json
+$ ember install ember-cli-deploy-index-json
 ```
 
-[TODO] You could add some sensible default config examples needed to quickly run your plugin
+- Configuration
 
-- Run the pipeline
+Edit `config/deploy.js` so that your configuration looks like the snippet below.
 
-```bash
-$ ember deploy
+```js
+s3: {},
+'revision-data': {
+  filePattern: 'index.json',
+  type: 'version-commit'
+},
+'s3-index': {
+  filePattern: 'index.json'
+}
 ```
 
-## Installation
-Run the following command in your terminal:
+*In depth:* The idea is that `revision-data`, `s3-index` and `index-json` have the same `filePattern` value. `index-json` is not present in this example because we're using its default `filePattern` value.
 
-```bash
-ember install ember-cli-deploy-manifest-json
-```
+## Usage
+
+- Deploy version to production environment
+
+`ember deploy production`
+
+- List versions on production environment
+
+`ember deploy:list production`
+
+- Activate a version on the production environment
+
+`ember deploy:activate --revision <revision-key>`
 
 ## Ember CLI Deploy Hooks Implemented
 
 For detailed information on what plugin hooks are and how they work, please refer to the [Plugin Documentation][1].
 
-[TODO] You should add a list of the pipeline hooks that your plugin implements here, for example:
-
-- `configure`
-- `build`
-- `upload`
+- `willUpload`
 
 ## Configuration Options
 
 For detailed information on how configuration of plugins works, please refer to the [Plugin Documentation][1].
 
-[TODO] You should describe the config options your plugin accepts here, for example:
+### filePattern
 
-### someConfigProperty
+Files matching this pattern will be included in the index.
 
-[TODO] Some description of this config property should go here
+*Default:* `'**/*.{js,css,png,gif,ico,jpg,map,xml,txt,svg,swf,eot,ttf,woff,woff2}'`
 
-*Default:* `'some sensible default could go here'`
+### fileIgnorePattern
+
+Files matching this pattern will *not* be included in the index even if they match filePattern.
+
+*Default:* `null`
+
+### indexPath
+
+The JSON index file name. If changed, you should adapt `revision-data` and `s3-index` plugins configs accordingly.
+
+*Default:* `'index.json'`
+
+### distDir
+
+Directory where assets have been written to
+
+*Default:* the `distDir` property of the deployment context
+
+### distFiles
+
+The Array of built assets.
+
+*Default:* the `distFiles` property of the deployment context
 
 ## Prerequisites
 
-The following properties are expected to be present on the deployment context object:
-
-[TODO] You should describe which context properties your plugin depends on, for example:
-
-- `distDir` (provided by [ember-cli-deploy-build][2])
+No properties are expected to be present on the deployment context object.
 
 ## Tests
 

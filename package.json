@@ -1,7 +1,7 @@
 {
-  "name": "ember-cli-deploy-manifest-json",
+  "name": "ember-cli-deploy-index-json",
   "version": "0.0.0",
-  "description": "A brand new Ember CLI Deploy plugin",
+  "description": "An Ember CLI Deploy plugin to generate a JSON index file of a build",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -9,14 +9,16 @@
   "scripts": {
     "test": "node tests/runner.js && ./node_modules/.bin/eslint index.js tests/**/*.js"
   },
-  "repository": "",
+  "repository": "https://github.com/novafloss/ember-cli-deploy-index-json",
   "engines": {
     "node": ">= 4"
   },
-  "author": "",
+  "author": "The Peopledoc JS Team",
   "license": "MIT",
   "dependencies": {
     "ember-cli-deploy-plugin": "^0.2.9",
+    "jsonfile": "^4.0.0",
+    "minimatch": "^3.0.4",
     "rsvp": "^3.5.0"
   },
   "devDependencies": {
