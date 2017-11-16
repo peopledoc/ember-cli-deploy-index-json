@@ -9,7 +9,7 @@
   "scripts": {
     "test": "node tests/runner.js && ./node_modules/.bin/eslint index.js tests/**/*.js"
   },
-  "repository": "https://github.com/novafloss/ember-cli-deploy-index-json",
+  "repository": "https://github.com/peopledoc/ember-cli-deploy-index-json",
   "engines": {
     "node": ">= 4"
   },
