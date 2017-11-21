@@ -42,8 +42,7 @@ Edit `config/deploy.js` so that your configuration looks like the snippet below.
 ```js
 s3: {},
 'revision-data': {
-  filePattern: 'index.json',
-  type: 'version-commit'
+  filePattern: 'index.json'
 },
 's3-index': {
   filePattern: 'index.json'
