@@ -2,6 +2,8 @@
 
 > An Ember CLI Deploy plugin to use a JSON index rather than an HTML one as provided by [`ember-cli-deploy-s3-index`](https://github.com/ember-cli-deploy/ember-cli-deploy-s3-index).
 
+[![Build Status](https://travis-ci.org/peopledoc/ember-cli-deploy-index-json.svg?branch=master)](https://travis-ci.org/peopledoc/ember-cli-deploy-index-json)
+
 This JSON index file is meant to be consumed by some application embedding yours.
 
 ```
@@ -49,7 +51,7 @@ s3: {},
 }
 ```
 
-*In depth:* The idea is that `revision-data`, `s3-index` and `index-json` have the same `filePattern` value. `index-json` is not present in this example because we're using its default `filePattern` value.
+_In depth:_ The idea is that `revision-data`, `s3-index` and `index-json` have the same `filePattern` value. `index-json` is not present in this example because we're using its default `filePattern` value.
 
 ## Usage
 
@@ -79,31 +81,31 @@ For detailed information on how configuration of plugins works, please refer to 
 
 Files matching this pattern will be included in the index.
 
-*Default:* `'**/*.{js,css,png,gif,ico,jpg,map,xml,txt,svg,swf,eot,ttf,woff,woff2}'`
+_Default:_ `'**/*.{js,css,png,gif,ico,jpg,map,xml,txt,svg,swf,eot,ttf,woff,woff2}'`
 
 ### fileIgnorePattern
 
-Files matching this pattern will *not* be included in the index even if they match filePattern.
+Files matching this pattern will _not_ be included in the index even if they match filePattern.
 
-*Default:* `null`
+_Default:_ `null`
 
 ### indexPath
 
 The JSON index file name. If changed, you should adapt `revision-data` and `s3-index` plugins configs accordingly.
 
-*Default:* `'index.json'`
+_Default:_ `'index.json'`
 
 ### distDir
 
 Directory where assets have been written to
 
-*Default:* the `distDir` property of the deployment context
+_Default:_ the `distDir` property of the deployment context
 
 ### distFiles
 
 The Array of built assets.
 
-*Default:* the `distFiles` property of the deployment context
+_Default:_ the `distFiles` property of the deployment context
 
 ## Prerequisites
 
@@ -111,7 +113,7 @@ No properties are expected to be present on the deployment context object.
 
 ## Tests
 
-* yarn test
+- yarn test
 
 ## Why `ember test` doesn't work
 
