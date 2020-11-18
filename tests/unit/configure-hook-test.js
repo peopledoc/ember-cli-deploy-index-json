@@ -18,8 +18,8 @@ describe('Manifest Json | configure hook', function() {
     }
   })
 
-  describe('required config', function() {
-    it('warns about missing config props', function() {
+  describe('default config', function() {
+    it('provides some default values', function() {
       let instance = subject.createDeployPlugin({
         name: 'manifest-json'
       })
@@ -32,44 +32,35 @@ describe('Manifest Json | configure hook', function() {
       }
 
       instance.beforeHook(context)
+      instance.configure(context)
 
-      assert.throws(function() {
-        instance.configure(context)
-      })
-
-      let s = 'Missing required config: `isInNeedOfSleep`'
-      assert.match(mockUi.messages.pop(), new RegExp(s))
-    })
-  })
-
-  describe('default config', function() {
-    let config
-
-    beforeEach(function() {
-      config = {
-        isInNeedOfSleep: true,
-        meaningOfLife: 99
-      }
+      assert.ok(instance.readConfig('filePattern'))
+      assert.equal(instance.readConfig('fileIgnorePattern'), null)
+      assert.ok(instance.readConfig('indexPath'))
     })
 
-    it('provides default meaning of life', function() {
+    it('has overridable default values', function() {
       let instance = subject.createDeployPlugin({
         name: 'manifest-json'
       })
 
-      delete config.meaningOfLife
-
       let context = {
         ui: mockUi,
         config: {
-          'manifest-json': config
+          'manifest-json': {
+            filePattern: '**/*',
+            fileIgnorePattern: 'nope',
+            indexPath: 'index.json'
+          }
         }
       }
 
       instance.beforeHook(context)
       instance.configure(context)
 
-      assert.equal(instance.readConfig('meaningOfLife'), 42)
+      assert.ok(instance.readConfig('filePattern'), '**/*')
+      assert.ok(instance.readConfig('fileIgnorePattern'), 'nope')
+      assert.ok(instance.readConfig('indexPath'), 'index.json')
     })
   })
 })
