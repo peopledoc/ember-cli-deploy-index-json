@@ -7,7 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "node tests/runner.js && ./node_modules/.bin/eslint index.js tests/**/*.js"
+    "test": "node tests/runner.js && ./node_modules/.bin/eslint index.js tests/**/*.js",
+    "lint": "eslint ."
   },
   "repository": "https://github.com/peopledoc/ember-cli-deploy-index-json",
   "engines": {
@@ -16,16 +17,18 @@
   "author": "The Peopledoc JS Team",
   "license": "MIT",
   "dependencies": {
+    "babel-eslint": "^10.1.0",
     "ember-cli-deploy-plugin": "^0.2.9",
+    "eslint-config-peopledoc": "^2.0.2",
     "jsonfile": "^4.0.0",
     "minimatch": "^3.0.4",
     "rsvp": "^3.5.0"
   },
   "devDependencies": {
-    "chai-as-promised": "^6.0.0",
     "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
     "ember-cli": "^2.12.0",
-    "eslint": "^4.18.2",
+    "eslint": "^7.0.0",
     "glob": "^7.1.1",
     "mocha": "^3.2.0"
   },
