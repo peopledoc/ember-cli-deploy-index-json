@@ -1,6 +1,6 @@
-/*eslint-env node*/
-const chai = require('chai');
-const chaiAsPromised = require("chai-as-promised");
-chai.use(chaiAsPromised);
+/* eslint-env node*/
+const chai = require('chai')
+const chaiAsPromised = require('chai-as-promised')
+chai.use(chaiAsPromised)
 
-module.exports = chai.assert;
+module.exports = chai.assert
