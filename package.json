@@ -22,7 +22,7 @@
     "eslint-config-peopledoc": "^2.0.2",
     "jsonfile": "^4.0.0",
     "minimatch": "^3.0.4",
-    "rsvp": "^3.5.0"
+    "rsvp": "^4.8.5"
   },
   "devDependencies": {
     "chai": "^3.5.0",
