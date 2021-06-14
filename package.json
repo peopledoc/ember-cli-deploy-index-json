@@ -20,7 +20,7 @@
     "babel-eslint": "^10.1.0",
     "ember-cli-deploy-plugin": "^0.2.9",
     "eslint-config-peopledoc": "^2.0.2",
-    "jsonfile": "^4.0.0",
+    "jsonfile": "^6.1.0",
     "minimatch": "^3.0.4",
     "rsvp": "^4.8.5"
   },
