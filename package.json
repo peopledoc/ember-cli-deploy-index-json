@@ -30,7 +30,7 @@
     "ember-cli": "^2.12.0",
     "eslint": "^7.28.0",
     "glob": "^7.1.1",
-    "mocha": "^3.2.0"
+    "mocha": "^9.1.0"
   },
   "keywords": [
     "ember-addon",
