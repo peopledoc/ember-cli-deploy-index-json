@@ -10,7 +10,10 @@
   "engines": {
     "node": ">= 4"
   },
-  "author": "The Peopledoc JS Team",
+  "author": {
+    "name": "PeopleDoc",
+    "url": "https://github.com/peopledoc"
+  },
   "license": "MIT",
   "dependencies": {
     "babel-eslint": "^10.1.0",
