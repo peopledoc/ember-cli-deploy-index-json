@@ -2,10 +2,6 @@
   "name": "ember-cli-deploy-index-json",
   "version": "0.0.0",
   "description": "An Ember CLI Deploy plugin to generate a JSON index file of a build",
-  "directories": {
-    "doc": "doc",
-    "test": "tests"
-  },
   "scripts": {
     "test": "node tests/runner.js && ./node_modules/.bin/eslint index.js tests/**/*.js",
     "lint": "eslint ."
