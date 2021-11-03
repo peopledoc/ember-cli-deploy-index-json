@@ -8,6 +8,7 @@
   },
   "homepage": "https://github.com/peopledoc/ember-cli-deploy-index-json",
   "repository": "https://github.com/peopledoc/ember-cli-deploy-index-json",
+  "bugs": "https://github.com/peopledoc/ember-cli-deploy-index-json/issues",
   "engines": {
     "node": ">= 4"
   },
