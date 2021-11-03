@@ -1,21 +1,33 @@
 {
   "name": "ember-cli-deploy-index-json",
-  "version": "0.0.0",
   "description": "An Ember CLI Deploy plugin to generate a JSON index file of a build",
-  "directories": {
-    "doc": "doc",
-    "test": "tests"
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "PeopleDoc",
+    "url": "https://github.com/peopledoc"
   },
+  "homepage": "https://github.com/peopledoc/ember-cli-deploy-index-json",
+  "repository": "https://github.com/peopledoc/ember-cli-deploy-index-json",
+  "bugs": "https://github.com/peopledoc/ember-cli-deploy-index-json/issues",
+  "keywords": [
+    "addon",
+    "add-on",
+    "deploy",
+    "deployment",
+    "ember",
+    "emberjs",
+    "ember-addon",
+    "ember-cli-deploy-plugin",
+    "ember-cli-deploy-s3-index",
+    "html",
+    "json",
+    "manifest"
+  ],
   "scripts": {
     "test": "node tests/runner.js && ./node_modules/.bin/eslint index.js tests/**/*.js",
     "lint": "eslint ."
   },
-  "repository": "https://github.com/peopledoc/ember-cli-deploy-index-json",
-  "engines": {
-    "node": ">= 4"
-  },
-  "author": "The Peopledoc JS Team",
-  "license": "MIT",
   "dependencies": {
     "babel-eslint": "^10.1.0",
     "ember-cli-deploy-plugin": "^0.2.9",
@@ -32,8 +44,7 @@
     "glob": "^7.1.1",
     "mocha": "^3.2.0"
   },
-  "keywords": [
-    "ember-addon",
-    "ember-cli-deploy-plugin"
-  ]
+  "engines": {
+    "node": ">= 4"
+  }
 }
