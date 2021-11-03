@@ -34,7 +34,17 @@
     "mocha": "^3.2.0"
   },
   "keywords": [
+    "addon",
+    "add-on",
+    "deploy",
+    "deployment",
+    "ember",
+    "emberjs",
     "ember-addon",
-    "ember-cli-deploy-plugin"
+    "ember-cli-deploy-plugin",
+    "ember-cli-deploy-s3-index",
+    "html",
+    "json",
+    "manifest"
   ]
 }
