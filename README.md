@@ -121,3 +121,14 @@ Since this is a node-only Ember CLI addon, we use mocha for testing and this pac
 
 [1]: http://ember-cli-deploy.com/plugins/ "Plugin Documentation"
 [2]: https://github.com/ember-cli-deploy/ember-cli-deploy-build "ember-cli-deploy-build"
+
+## Contributors ✨
+
+[//]: contributor-faces
+<a href="https://github.com/GreatWizard"><img src="https://avatars.githubusercontent.com/u/1322081?v=4" title="GreatWizard" width="80" height="80"></a>
+<a href="https://github.com/xcambar"><img src="https://avatars.githubusercontent.com/u/657654?v=4" title="xcambar" width="80" height="80"></a>
+<a href="https://github.com/amessinger"><img src="https://avatars.githubusercontent.com/u/3007703?v=4" title="amessinger" width="80" height="80"></a>
+<a href="https://github.com/MrChocolatine"><img src="https://avatars.githubusercontent.com/u/47531779?v=4" title="MrChocolatine" width="80" height="80"></a>
+<a href="https://github.com/romgere"><img src="https://avatars.githubusercontent.com/u/13900970?v=4" title="romgere" width="80" height="80"></a>
+
+[//]: contributor-faces
