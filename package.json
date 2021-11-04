@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-deploy-index-json",
   "description": "An Ember CLI Deploy plugin to generate a JSON index file of a build",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "PeopleDoc",
