@@ -125,4 +125,42 @@ Since this is a node-only Ember CLI addon, we use mocha for testing and this pac
 ## Contributors
 
 <!-- readme: contributors,ember-tomster/- -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/GreatWizard">
+            <img src="https://avatars.githubusercontent.com/u/1322081?v=4" width="100;" alt="GreatWizard"/>
+            <br />
+            <sub><b>GreatWizard</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/xcambar">
+            <img src="https://avatars.githubusercontent.com/u/657654?v=4" width="100;" alt="xcambar"/>
+            <br />
+            <sub><b>xcambar</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/MrChocolatine">
+            <img src="https://avatars.githubusercontent.com/u/47531779?v=4" width="100;" alt="MrChocolatine"/>
+            <br />
+            <sub><b>MrChocolatine</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/amessinger">
+            <img src="https://avatars.githubusercontent.com/u/3007703?v=4" width="100;" alt="amessinger"/>
+            <br />
+            <sub><b>amessinger</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/romgere">
+            <img src="https://avatars.githubusercontent.com/u/13900970?v=4" width="100;" alt="romgere"/>
+            <br />
+            <sub><b>romgere</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: contributors,ember-tomster/- -end -->
