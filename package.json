@@ -24,6 +24,9 @@
     "json",
     "manifest"
   ],
+  "files": [
+    "/index.js"
+  ],
   "scripts": {
     "test": "node tests/runner.js && ./node_modules/.bin/eslint index.js tests/**/*.js",
     "lint": "eslint ."
