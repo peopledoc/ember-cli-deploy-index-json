@@ -156,6 +156,13 @@ Since this is a node-only Ember CLI addon, we use mocha for testing and this pac
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/lifeart">
+            <img src="https://avatars.githubusercontent.com/u/1360552?v=4" width="100;" alt="lifeart"/>
+            <br />
+            <sub><b>lifeart</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/romgere">
             <img src="https://avatars.githubusercontent.com/u/13900970?v=4" width="100;" alt="romgere"/>
             <br />
