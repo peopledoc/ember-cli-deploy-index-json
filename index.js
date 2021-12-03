@@ -26,7 +26,7 @@ module.exports = {
        */
 
       defaultConfig: { // eslint-disable-line ember/avoid-leaking-state-in-ember-objects
-        filePattern: '**/*.{js,css,png,gif,ico,jpg,map,xml,txt,svg,swf,eot,ttf,woff,woff2}',
+        filePattern: '**/*.{js,css,json,png,gif,ico,jpg,map,xml,txt,svg,swf,eot,ttf,woff,woff2}',
         fileIgnorePattern: null,
         indexPath: 'index.json',
         distDir(context) {
