@@ -135,17 +135,17 @@ Since this is a node-only Ember CLI addon, we use mocha for testing and this pac
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/xcambar">
-            <img src="https://avatars.githubusercontent.com/u/657654?v=4" width="100;" alt="xcambar"/>
-            <br />
-            <sub><b>xcambar</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/MrChocolatine">
             <img src="https://avatars.githubusercontent.com/u/47531779?v=4" width="100;" alt="MrChocolatine"/>
             <br />
             <sub><b>MrChocolatine</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/xcambar">
+            <img src="https://avatars.githubusercontent.com/u/657654?v=4" width="100;" alt="xcambar"/>
+            <br />
+            <sub><b>xcambar</b></sub>
         </a>
     </td>
     <td align="center">
